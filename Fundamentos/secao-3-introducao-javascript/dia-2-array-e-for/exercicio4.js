@@ -106,19 +106,19 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(menorString, maiorString);
 
 // EX12:
-let maiorNumeroPrimo = 0;
-let primo = undefined;
+// let maiorNumeroPrimo = 0;
+// let primo = undefined;
 
-for (let index = 50; index >= 2; index -= 1) {
-  primo = true;
-  for (let index1 = 2; index1 < index; index1 += 1) {
-    if (index % index1 === 0) {
-      primo = false;
-    }
-  }
-  if (primo == true) {
-    maiorNumeroPrimo = index;
-    break;
-  }
-}
-console.log(maiorNumeroPrimo);
+// for (let index = 50; index >= 2; index -= 1) {
+//   primo = true;
+//   for (let index1 = 2; index1 < index; index1 += 1) {
+//     if (index % index1 === 0) {
+//       primo = false;
+//     }
+//   }
+//   if (primo == true) {
+//     maiorNumeroPrimo = index;
+//     break;
+//   }
+// }
+// console.log(maiorNumeroPrimo);
