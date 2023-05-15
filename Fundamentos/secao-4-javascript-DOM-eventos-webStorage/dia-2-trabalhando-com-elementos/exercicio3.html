@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const h1 = document.createElement('h1');
+      document.body.appendChild(h1).innerHTML = 'TrybeTrip - Agência de Viagens';
+      // Bônus
+      h1.className = 'title';
+
+      const main = document.createElement('main');
+      document.body.appendChild(main).className = 'main-content';
+
+      const section = document.createElement('section');
+      main.appendChild(section).className = 'center-content';
+      // Bônus
+      section.parentElement.style.backgroundColor = 'green';
+
+      const paragraph = document.createElement('p');
+      section.appendChild(paragraph).innerHTML = 'Troque suas milhas por descontos';
+
+      const section1 = document.createElement('section');
+      main.appendChild(section1).className = 'left-content';
+      // Bônus
+      main.removeChild(section1);
+
+      const section2 = document.createElement('section');
+      main.appendChild(section2).className = 'right-content';
+      // Bônus
+      section2.style.marginRight = 'auto';
+
+      const img = document.createElement('img');
+      section1.appendChild(img).className = 'small-image';
+      img.setAttribute('src', 'https://picsum.photos/200');
+
+      const ul = document.createElement('ul');
+      const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let index = 0; index < numbers.length; index += 1) {
+        const li = document.createElement('li');
+        li.innerText = numbers[index];
+        ul.appendChild(li);
+      }
+      section2.appendChild(ul);
+      // Bônus
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+
+      for (let index = 0; index < 3; index += 1) {
+        const h3 = document.createElement('h3');
+        main.appendChild(h3).innerHTML = index;
+      }
+      // Bônus
+      for (let index = 0; index < 3; index += 1) {
+        const h3 = document.querySelectorAll('h3')
+        h3[index].className = 'description';
+      }
+    </script>
+  </body>
+</html>
