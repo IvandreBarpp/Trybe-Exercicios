@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício</title>
+</head>
+<body>
+  <form action="" method="get">
+    <label for="nome-completo">Nome Completo:
+      <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+    </label>
+    <br><br>
+    <label for="useremail">Email:
+      <input type="email" name="email" id="useremail" placeholder="Digite seu email" autofocus required autocomplete="off">
+    </label>
+    <br><br>
+    <label for="estado">Estado:
+      <select name="estado" id="estado">
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="ba">Bahia</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="rs" selected >Rio Grande do Sul</option>
+      </select>
+    </label>
+    <br>
+    <p>Selecione sua foto:</p>
+    <input type="file" name="foto" id="foto-perfil">
+  <br>
+  <p>Comidas favoritas:</p>
+  <label for="comida-1">
+    <input type="radio" name="comida-favorita" id="comida-1" value="pizza" checked>Pizza
+  </label>
+  <label for="comida-2">
+    <input type="radio" name="comida-favorita" id="comida-2" value="hamburguer" >Hambúrguer
+  </label>
+  <label for="comida-3">
+    <input type="radio" name="comida-favorita" id="comida-3" value="pastel" >Pastel
+  </label>
+  <label for="comida-4">
+    <input type="radio" name="comida-favorita" id="comida-4" value="sushi" >Sushi
+  </label>
+  <label for="comida-5">
+    <input type="radio" name="comida-favorita" id="comida-5" value="frango frito" >Frango Frito
+  </label>
+  <label for="comida-6">
+    <input type="radio" name="comida-favorita" id="comida-6" value="outro" >Outro
+  </label>
+  <br>
+  <p>Escreva algo sobre você</p>
+  <textarea name="sobre-mim" id="textarea-1" cols="30" rows="10"></textarea>
+  <br>
+  <label for="senha">Senha:
+    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+  </label>
+  <input type="checkbox" name="check-remember" id="check-remember">
+  <label for="check-remember"> Lembre-me</label>
+  <br><br>
+  <label for="">
+    <input type="checkbox" name="promocoes" id="checkbox-noticias">Deseja receber notícias e promoções incríveis??
+  </label>
+  <br><br>
+  <label for="entrar">
+    <button type="submit" id="entrar">Enviar</button>
+  </label>
+</form>
+</body>
+</html>
