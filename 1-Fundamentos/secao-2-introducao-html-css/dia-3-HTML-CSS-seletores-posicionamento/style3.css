@@ -1,0 +1,38 @@
+div:hover {
+    border: 10px solid black:
+}
+
+h3 {
+    font-style: italic;
+}
+
+.cor-primaria {
+    background-color: red;
+    font-size: 10px;
+    color: blueviolet;
+}
+
+.cor-secundaria {
+    background-color: coral;
+    font-size: 100px;
+    color: red;
+}
+
+.cor-complementar {
+    background-color: orangered;
+    font-size: 50px;
+    color: turquoise;
+}
+
+.cor-escura {
+    background-color: darkgreen;
+    font-size: 20px;
+}
+
+.cor-clara {
+    background-color: chartreuse;
+    font-size: 35px;
+}
+div:nth-of-type(1) {
+    background-color: rgb(255, 0, 170);
+  }
