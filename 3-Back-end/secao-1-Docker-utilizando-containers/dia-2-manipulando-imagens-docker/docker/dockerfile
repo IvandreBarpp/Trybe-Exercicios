@@ -1,0 +1,4 @@
+FROM betrybe/figtrybe-artify:latest
+ENTRYPOINT [ "node", "app.js" ]
+CMD [ "#VQV Trybe" ]
+# docker container run --rm figtrybe-artify (-f Ghost) "Tr4cTºR"
